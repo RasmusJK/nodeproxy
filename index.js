@@ -9,7 +9,7 @@ app.all('*', function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     next();
 });
-const port = 4000;
+const port = 8080;
 
 app.get('/',  async (req, res) => {
     const response = await fetch("https://open-api.myhelsinki.fi/v2/places/?tags_search=Beach")
